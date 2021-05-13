@@ -109,11 +109,7 @@ For old and new CNN model, we have visualized the hidden layers, dense layers, a
 Fig 4. shows the CNN old model (81% average accuracy). For CNN model, we visualized the hidden layers to learn which features are responsible for the particular emotion category.  
 </div>
 <p align="center">
-<<<<<<< HEAD
 <a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/Old-model.png" align="center" height="150"></a>
-=======
-<a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/Figures/Old-model.png" align="center" height="150"></a>
->>>>>>> 286995c9ecf89e1db0a88811f8b31cbf58341d55
 </p>
 
 <div align="center"> 
@@ -128,11 +124,7 @@ Fig 5. shows the CNN new model (85% average accuracy).
 </div>
 
 <p align="center">
-<<<<<<< HEAD
 <a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/New-model.png" align="center" height="150"></a>
-=======
-<a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/Figures/New-model.png" align="center" height="150"></a>
->>>>>>> 286995c9ecf89e1db0a88811f8b31cbf58341d55
 </p>
 
 <div align="center"> 
@@ -148,11 +140,7 @@ Visualization with activation maximizationof the last layer shows that there is 
 </div>
 
 <p align="center">
-<<<<<<< HEAD
 <a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/dense_layer.png" align="center" height="300"></a>
-=======
-<a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/Figures/dense_layer.png" align="center" height="300"></a>
->>>>>>> 286995c9ecf89e1db0a88811f8b31cbf58341d55
 </p>
 
 <div align="center"> 
