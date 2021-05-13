@@ -4,7 +4,7 @@
 
 <div align="center"> 
   
-## New York Univeristy
+## New York University
 
  </div>
  
