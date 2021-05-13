@@ -178,10 +178,13 @@ The main focus of this project is to interpret the emotion classification in CNN
 </div>
 
 <div align="center"> 
+
 ## LIBRARIES USED
+
 </div>
 
 <div align="justify"> 
+
 F. Chollet, "Keras," 2015, https://keras.io
 
 R. Kotikalapudi et al., "keras-vis", 2017, https://github.com/raghakot/keras-vis
@@ -198,7 +201,9 @@ F. Pedregosa, V. Gael, G. Alexandre, M. Vincent, T. Bertrand, G. Olivier, M. Blo
 </div>
 
 <div align="center"> 
+
 ## REFERENCES
+
 </div>
 
 <div align="justify"> 
