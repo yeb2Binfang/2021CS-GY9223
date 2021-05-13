@@ -51,7 +51,7 @@ Analyzing the biological signals our brain generates in response to external vis
 </p>
 <div align="center"> 
   
-Fig.1: 4 Emotion classes: Positive Valence High Arousal (PVHA), Negative Valence High Arousal (NVHA), Negative Valence Low Arousal (NVLA), Positive Valence Low Arousal (PVLA).
+Fig. 1: 4 Emotion classes: Positive Valence High Arousal (PVHA), Negative Valence High Arousal (NVHA), Negative Valence Low Arousal (NVLA), Positive Valence Low Arousal (PVLA).
 
 </div>
 
@@ -70,22 +70,71 @@ Fig.1: 4 Emotion classes: Positive Valence High Arousal (PVHA), Negative Valence
 </div>
 
 ### Spectral data visualization
+
 <div align="justify"> 
-The spectral power increases with the frequency and demonstrates similar behavior for all fouremotion categories. The peak at 50Hz reflects the effect of applying the notch  filter. Interestingly, that the magnitude of the spectral power density for NVLA prevails for lower frequencies, particularly in Beta band (13-31 Hz), while the magnitudes for  NVHA and PVHA become more prevalentin Low Gamma (31Hz – 50Hz) and High Gamma (51Hz – 79Hz) bands.
+The averaged plots of time course of spectral densities for each of the bands are shown on Fig. 2. The first observation is that the magnitude of the spectral power densities remains relatively stable, except of the first 500 msec (10 timebins). This observation confirms that the emotion data is weakly depend on the time for short time intervals  (e.g. it takes minutes or even hours to calm down). We can also notice a significant increase in the spectral power density at the beginning on the trial, which can be explained  either by extensive firing of neurons on perceiving the new visual stimulus or, by the noise introduced with the trigger, whichis a more plausible explanation. Furhter analysis sugests thatthis perturbation in spectral power density does not containsignificant information about emotional states and its removalincreases the accuracy of the model.
 </div>
 
 <p align="center">
-<a href="https://raw.githubusercontent.com/vbabushkin/2021CS-GY9223/main/Figures/Power%20spectral%20density%20averaged.png" align="center" height="300"></a>
+<a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/Figures/The%20%20spectral%20%20densities.png" align="center" height="200"></a>
 </p>
-
 <div align="center"> 
   
-Fig2. Power spectral density averaged over 160 timepointsand 59 sensors.
+Fig. 2: The spectral densities for four emotion categories averaged over trials and channels. Notice that the magnitude of the emotion data does not strictly depend on the time except of the first 10 timebins (∼500msec).
 
 </div>
 
-### Dimension Reduction
+<div align="justify"> 
+The plots of spectral power versus all frequencies aredemonstrated on Fig. 3. The spectral power increases with the frequency and demonstrates similar behavior for all fouremotion categories. The peak at 50Hz reflects the effect of applying the notch  filter. Interestingly, that the magnitude of the spectral power density for NVLA prevails for lower frequencies, particularly in Beta band (13-31 Hz), while the magnitudes for  NVHA and PVHA become more prevalentin Low Gamma (31Hz – 50Hz) and High Gamma (51Hz – 79Hz) bands.
+</div>
+
+<p align="center">
+<a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/Figures/Power%20spectral%20density%20averaged.png" align="center" height="300"></a>
+</p>
+<div align="center"> 
+  
+Fig. 3: Power spectral density averaged over 160 timepointsand 59 sensors.
+
+</div>
+
+### VISUALIZING HIDDEN LAYERS OF THE CNN NETWORK
 
 <div align="justify"> 
   
+</div>
+
+#### Old CNN Model
+<div align="justify"> 
+  
+</div>
+
+#### New CNN Model
+<div align="justify"> 
+  
+</div>
+
+### VISUALIZING SVM MODEL
+<div align="justify"> 
+  
+We were also interested in investigating how the SVM model, proposed in [3] is capable of discerning between 4 types of emotions. For this purpose, we visualized the decision  boundary(shown in Fig. 8) drawn by the SVM model with RBF function with γ= 0.1 for the 80 × 160 × 59 × 2671 tensor averaged across the time and three frequency bins, corresponding to beta,  lower gamma, and higher gammabands and then flattened to get a vector of length 177 for eachtrial. We can notice that despite of close proximity of samples from four emotion categories, the SVM model is capable of creating a very complex boundary.   
+</div>
+
+<p align="center">
+<a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/Figures/SVM.png" align="center" height="300"></a>
+</p>
+<div align="center"> 
+  
+Fig. 8: Visualization of decision boundaries drawn by SVMwith RBF (γ= 0.1) for first 5 principal components.
+
+</div>
+
+<div align="center"> 
+ 
+## CONCLUSION
+</div>
+
+<div align="justify"> 
+  
+
+The main focus of this project is to interpret the emotion classification in CNN model and to offer an improved archi-tecture. We visualized feature maps extracted by the old CNN model and noticing that the max pooling layer decreases the"resolution" of the final feature map we decided to remove it from the architecture. In the meantime, the feature  maps of the convolution layers show that the filters learn patterns of the activations of sensors for different frequencies. Some filters consider activations of single sensors,  others groups of sensors. To capture the variety of activation patterns we decided to increase the number of filters (and it is also recommended for increasing the prediction accuracy of the model). The final convolution layer of a new model(Fig. 7, b.)) is capable of better discerning between four emotioncategories, which results in the increase of  the accuracy of the model. Also, the activation maximization of the dense layer of the new model(Fig.  10), while showing similar patterns as of the old one (Fig. 9) provides more clear idea about which frequency ranges are responsible for eliciting different types of emotions. Thus, we conclude from Fig. 10 that the NVLA is characterized by activations  in alpha and beta bands, while NVHA and PVHA can be described by the activations in lower gamma and in high gamma bands. Notice that we cannot make similar conclusions about activation of brain areas (under correponding sensors) due to the poor spatial resolutions of EEG.
 </div>
