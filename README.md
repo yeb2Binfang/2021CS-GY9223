@@ -97,26 +97,62 @@ Fig. 3: Power spectral density averaged over 160 timepointsand 59 sensors.
 
 </div>
 
-### VISUALIZING HIDDEN LAYERS OF THE CNN NETWORK
+### VISUALIZING LAYERS OF THE CNN NETWORK
 
 <div align="justify"> 
-  
+For old and new CNN model, we have visualized the hidden layers, dense layers, and maximum activation plot. We have specific analysis about the graphs in the report to explain why the new model works better for the EEG data we collected. In the readme file, we will show the dense layers to compare the old CNN modela with new CNN model. 
 </div>
 
 #### Old CNN Model
 <div align="justify"> 
+ 
+Fig 4. shows the CNN old model (81% average accuracy). For CNN model, we visualized the hidden layers to learn which features are responsible for the particular emotion category.  
+</div>
+<p align="center">
+<a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/Figures/Old-model.png" align="center" height="150"></a>
+</p>
+
+<div align="center"> 
   
+Fig. 4: CNN old model
+
 </div>
 
 #### New CNN Model
 <div align="justify"> 
+Fig 5. shows the CNN new model (85% average accuracy). 
+</div>
+
+<p align="center">
+<a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/Figures/New-model.png" align="center" height="150"></a>
+</p>
+
+<div align="center"> 
   
+Fig. 5: CNN new model
+
+</div>
+
+#### Dense Layers of Old and New CNN model
+<div align="justify"> 
+  
+Visualization with activation maximizationof the last layer shows that there is a clear difference betweenthe four classes, more pronounced for the new model. But in general,  the NVLA is characterized by activations in alpha(8-12 Hz) and beta (13Hz–30Hz) bands for channels from 25 to 45 while the NVHA can be described by the activations in lower  gamma and in high gamma for channels between 0 and 10 and 45 and 59 (see Fig. 10). For PVLA we have the activated regions in lower/higher gamma – more wider and blurred in old  model(from channels from 10 to 50)but sharper in the new model, where the lower gamma activations are observed in channels between 55 and 59 and higher gamma – for channels between 10 and 30. For PVHA the activation moslty happens in beta for channels from 10 to 25 and in high gamma for channels 50-59, but the old model does not capture the beta  band activations. The relative obscurity of visualized activations by an old model was another objective for reviewing the model’s archi-tecture. The removal of the maxpooling  layer in old model on Fig. 7, a.) results in more clear activation maximization visualizations for the last dense layer. Also, increasing the model width, i. e. the number of filters in each convolution layer from 32 to 64 leads to the imporvement of the classification accuracy.
+</div>
+
+<p align="center">
+<a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/Figures/dense_layer.png" align="center" height="300"></a>
+</p>
+
+<div align="center"> 
+  
+Fig. 6: Left four pictures show the visualization of dense layers with activation maximization for each class of the old CNN model. Right four pictures show the visualization of dense layers with activation maximization for each class of the new CNN model.
+
 </div>
 
 ### VISUALIZING SVM MODEL
 <div align="justify"> 
   
-We were also interested in investigating how the SVM model, proposed in [3] is capable of discerning between 4 types of emotions. For this purpose, we visualized the decision  boundary(shown in Fig. 8) drawn by the SVM model with RBF function with γ= 0.1 for the 80 × 160 × 59 × 2671 tensor averaged across the time and three frequency bins, corresponding to beta,  lower gamma, and higher gammabands and then flattened to get a vector of length 177 for eachtrial. We can notice that despite of close proximity of samples from four emotion categories, the SVM model is capable of creating a very complex boundary.   
+We were also interested in investigating how the SVM model, proposed in [3] is capable of discerning between 4 types of emotions. For this purpose, we visualized the decision  boundary(shown in Fig. 7) drawn by the SVM model with RBF function with γ= 0.1 for the 80 × 160 × 59 × 2671 tensor averaged across the time and three frequency bins, corresponding to beta,  lower gamma, and higher gammabands and then flattened to get a vector of length 177 for eachtrial. We can notice that despite of close proximity of samples from four emotion categories, the SVM model is capable of creating a very complex boundary.   
 </div>
 
 <p align="center">
@@ -124,7 +160,7 @@ We were also interested in investigating how the SVM model, proposed in [3] is c
 </p>
 <div align="center"> 
   
-Fig. 8: Visualization of decision boundaries drawn by SVMwith RBF (γ= 0.1) for first 5 principal components.
+Fig. 7: Visualization of decision boundaries drawn by SVMwith RBF (γ= 0.1) for first 5 principal components.
 
 </div>
 
@@ -136,5 +172,62 @@ Fig. 8: Visualization of decision boundaries drawn by SVMwith RBF (γ= 0.1) for 
 <div align="justify"> 
   
 
-The main focus of this project is to interpret the emotion classification in CNN model and to offer an improved archi-tecture. We visualized feature maps extracted by the old CNN model and noticing that the max pooling layer decreases the"resolution" of the final feature map we decided to remove it from the architecture. In the meantime, the feature  maps of the convolution layers show that the filters learn patterns of the activations of sensors for different frequencies. Some filters consider activations of single sensors,  others groups of sensors. To capture the variety of activation patterns we decided to increase the number of filters (and it is also recommended for increasing the prediction accuracy of the model). The final convolution layer of a new model(Fig. 7, b.)) is capable of better discerning between four emotioncategories, which results in the increase of  the accuracy of the model. Also, the activation maximization of the dense layer of the new model(Fig.  10), while showing similar patterns as of the old one (Fig. 9) provides more clear idea about which frequency ranges are responsible for eliciting different types of emotions. Thus, we conclude from Fig. 10 that the NVLA is characterized by activations  in alpha and beta bands, while NVHA and PVHA can be described by the activations in lower gamma and in high gamma bands. Notice that we cannot make similar conclusions about activation of brain areas (under correponding sensors) due to the poor spatial resolutions of EEG.
+The main focus of this project is to interpret the emotion classification in CNN model and to offer an improved archi-tecture. We visualized feature maps extracted by the old CNN model and noticing that the max pooling layer decreases the"resolution" of the final feature map we decided to remove it from the architecture. In the meantime, the feature  maps of the convolution layers show that the filters learn patterns of the activations of sensors for different frequencies. Some filters consider activations of single sensors,  others groups of sensors. To capture the variety of activation patterns we decided to increase the number of filters (and it is also recommended for increasing the prediction accuracy of the model). The final convolution layer of a new model(Fig. 5)) is capable of better discerning between four emotioncategories, which results in the increase of  the accuracy of the model. Also, the activation maximization of the dense layer of the new model(Fig.  6), while showing similar patterns as of the old one (Fig. 6) provides more clear idea about which frequency ranges are responsible for eliciting different types of emotions. Thus, we conclude from Fig. 6 that the NVLA is characterized by activations  in alpha and beta bands, while NVHA and PVHA can be described by the activations in lower gamma and in high gamma bands. Notice that we cannot make similar conclusions about activation of brain areas (under correponding sensors) due to the poor spatial resolutions of EEG.
+</div>
+
+<div align="center"> 
+ 
+## REFERENCE
+</div>
+
+<div align="justify"> 
+
+[1] J. Panksepp, “Affective neuroscience the foundations of human and animal emotions /,” New York, 2004.
+
+[2] L. F. Barrett, B. Mesquita, K. N. Ochsner, and J. J. Gross,  “Theexperience  of  emotion,”Annu. Rev. Psychol.,  vol.  58,  pp.  373–403,2007.
+
+[3]  V.  Babushkin,  W.  Park,  M.   Hassan  Jamil,  H.  Alsuradi,  and  M.  Eid,“EEG-based classification of the intensity of emotional responses,” in10th International IEEE EMBS Conference on Neural Engineering,2021.
+
+[4]  A. Bhardwaj, A. Gupta, P. Jain, A. Rani, and J. Yadav, “Classificationof  human  emotions  from  EEG  signals  using  SVM  and  LDA  classi-fiers,” in2015 2nd International Conference on Signal Processing andIntegrated Networks (SPIN), 2015, pp. 180–185.
+
+[5]  M.   M.   Bradley   and   P.   J.   Lang,   “Measuring   emotion:   the   self-assessment manikin and the semantic differential,”Journal of behaviortherapy and experimental psychiatry, vol. 25, no. 1, pp. 49–59, 1994.
+
+[6]  N.  Dar,  M.  Akram,  S.  Khawaja,  and  A.  Pujari,  “CNN  and  LSTM-based emotion charting using physiological signals,”Sensors, vol. 20,p. 4551, 08 2020.
+
+[7]  Y.  Zhao,  X.  Cao,  J.  Lin,  D.  Yu,  and  X.  Cao,  “Multimodal  emotionrecognition model using physiological signals,” 2019.
+
+[8]  S. Siddharth, T.-P. Jung, and T. J. Sejnowski, “Utilizing deep learningtowards  multi-modal  bio-sensing  and  vision-based  affective  comput-ing,” 2019.
+
+[9]  A.  T.  Sohaib,  S.  Qureshi,  J.  Hagelbäck,  O.  Hilborn,  and  P.  Jerˇci ́c,“Evaluating classifiers for emotion recognition using EEG,” inFoun-dations of Augmented Cognition, D. D. Schmorrow and C. M. Fidopi-astis, Eds.    Berlin, Heidelberg: Springer Berlin Heidelberg, 2013, pp.492–501.
+
+[10]  P.  Rani,  C.  Liu,  N.  Sarkar,  and  E.  Vanman,  “An  empirical  study  ofmachine  learning  techniques  for  affect  recognition  in  human–robotinteraction,”Pattern Analysis and Applications, vol. 9, 05 2006.
+
+[11]  Y.-P. Lin, C.-H. Wang, T.-L. Wu, S.-K. Jeng, and J. Chen, “EEG-basedemotion recognition in music listening: A comparison of schemes formulticlass support vector machine,” 04 2009, pp. 489–492.
+
+[12]  R. Horlings, D. Datcu, and L. Rothkrantz, “Emotion recognition usingbrain activity,” 01 2008, p. 6.
+
+[13]  V. Anh, M. Van, B. Ha Bang, and T. Huynh Quyet, “A real-time modelbased support vector machine for emotion recognition through EEG,”11 2012, pp. 191–196.
+
+[14]  P.  Petrantonakis  and  L.  Hadjileontiadis,  “Emotion  recognition  frombrain signals using hybrid adaptive filtering and higher order crossingsanalysis,”Affective Computing, IEEE Transactions on, vol. 1, pp. 81–97, 07 2010.
+
+[15]  Y.  Zhu,  S.  Wang,  and  Q.  Ji,  “Emotion  recognition  from  users’  EEGsignals with the help of stimulus videos,” vol. 2014, 07 2014, pp. 1–6.
+
+[16]  H. Mei and X. Xu, “EEG-based emotion classification using convolu-tional neural network,” in2017 International Conference on Security,Pattern Analysis, and Cybernetics (SPAC), 2017, pp. 130–135.
+
+[17]  R.  Alhalaseh  and  S.  Alasasfeh,  “Machine-learning-based  emotionrecognition system using EEG signals,”Computers, vol. 9, no. 4, 2020.
+
+[18]  Y.-H. Kwon, S.-B. Shin, and S. Kim, “Electroencephalography basedfusion   two-dimensional   (2D)-convolution   neural   networks   (CNN)model for emotion recognition system,”Sensors (Basel, Switzerland),vol. 18, 2018.
+
+[19]  S. Koelstra, C. Muhl, M. Soleymani, J. Lee, A. Yazdani, T. Ebrahimi,T.  Pun,  A.  Nijholt,  and  I.  Patras,  “Deap:  A  database  for  emotionanalysis ;using physiological signals,”IEEE Transactions on AffectiveComputing, vol. 3, no. 1, pp. 18–31, 2012.
+
+[20]  J.  Liu,  G.  Wu,  Y.  Luo,  S.  Qiu,  S.  Yang,  W.  Li,  and  Y.  Bi,  “EEG-based  emotion  classification  using  a  deep  neural  network  and  sparseautoencoder,”Frontiers in Systems Neuroscience, vol. 14, p. 43, 2020.
+
+[21]  N. Liu, Y. Fang, L. Li, L. Hou, F. Yang, and Y. Guo, “Multiple featurefusion for automatic emotion recognition using EEG signals,” 04 2018,pp. 896–900.
+
+[22]  L.  van  der  Maaten  and  G.  Hinton,  “Viualizing  data  using  t-SNE,”Journal of Machine Learning Research,  vol.  9,  pp.  2579–2605,  112008.
+
+[23]  A. Bilal, A. Jourabloo, M. Ye, X. Liu, and L. Ren, “Do convolutionalneural networks learn class hierarchy?”IEEE Transactions on Visual-ization and Computer Graphics, vol. 24, no. 1, pp. 152–162, 2018.
+
+[24]  Z.  Gao,  X.  Cui,  W.  Wan,  and  Z.  Gu,  “Recognition  of  emotionalstates  using  multiscale  information  analysis  of  high  frequency  eegoscillations,”Entropy,   vol.   21,   no.   6,   2019.   [Online].   Available:https://www.mdpi.com/1099-4300/21/6/609
+
 </div>
