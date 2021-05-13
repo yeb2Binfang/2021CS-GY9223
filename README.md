@@ -49,8 +49,7 @@ Analyzing the biological signals our brain generates in response to external vis
 
 
 <p align="center">
-![Kiku](FIGURES/Emotion_class.png, align="center" height="300") 
-</p>
+![Kiku](FIGURES/Emotion_class.png) </p>
 <div align="center"> 
   
 Fig. 1: 4 Emotion classes: Positive Valence High Arousal (PVHA), Negative Valence High Arousal (NVHA), Negative Valence Low Arousal (NVLA), Positive Valence Low Arousal (PVLA).
