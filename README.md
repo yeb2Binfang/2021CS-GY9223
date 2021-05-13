@@ -20,6 +20,10 @@
 
 #### Vahan Babushkin, Binfang Ye
 
+
+#### Please check [project report](https://github.com/vbabushkin/2021CS-GY9223/blob/main/REPORT/CS_GY_9223_PROJECT_REPORT.pdf) for more details
+
+
 ###### (code repository)
 
 <!--## ABSTRACT-->
