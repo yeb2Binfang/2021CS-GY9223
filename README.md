@@ -185,6 +185,10 @@ The main focus of this project is to interpret the emotion classification in CNN
 
 <div align="justify"> 
 
+Jorge Piazentin Ono, Sonia Castelo, Roque Lopez, Enrico Bertini, Juliana Freire, Claudio Silva, "PipelineProfiler : A Visual Analytics Tool for the Exploration of AutoML Pipelines." IEEE Transactions on Visualization and Computer Graphics. 2021 ; Vol. 27, No. 2. pp. 390-400.,https://pypi.org/project/pipelineprofiler/
+
+Matthias Feurer, Katharina Eggensperger, Stefan Falkner, Marius Lindauer and Frank Hutter,"Auto-Sklearn 2.0: The Next Generation," arXiv:2007.04074 [cs.LG], 2020 https://arxiv.org/abs/2007.04074, github: https://github.com/automl/auto-sklearn
+
 F. Chollet, "Keras," 2015, https://keras.io
 
 R. Kotikalapudi et al., "keras-vis", 2017, https://github.com/raghakot/keras-vis
