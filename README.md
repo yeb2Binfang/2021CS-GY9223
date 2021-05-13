@@ -1,5 +1,5 @@
 <p align="center">
-<a href="http://usm.md/?lang=en"><img src="https://user-images.githubusercontent.com/68700549/118066006-eaf92080-b36b-11eb-9116-9f8e02a79534.png" align="center" height="100"></a>
+<a href="https://engineering.nyu.edu/"><img src="https://user-images.githubusercontent.com/68700549/118066006-eaf92080-b36b-11eb-9116-9f8e02a79534.png" align="center" height="100"></a>
 </p>
 
 <div align="center"> 
@@ -90,7 +90,7 @@ The plots of spectral power versus all frequencies aredemonstrated on Fig. 3. Th
 </div>
 
 <p align="center">
-<a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/Power%20spectral%20density%20averaged.png" align="center" height="300"></a>
+<img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/Power%20spectral%20density%20averaged.png" align="center" height="300">
 </p>
 <div align="center"> 
   
@@ -110,7 +110,7 @@ For old and new CNN model, we have visualized the hidden layers, dense layers, a
 Fig 4. shows the CNN old model (81% average accuracy). For CNN model, we visualized the hidden layers to learn which features are responsible for the particular emotion category.  
 </div>
 <p align="center">
-<a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/Old-model.png" align="center" height="150"></a>
+<img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/Old-model.png" align="center" height="150">
 </p>
 
 <div align="center"> 
@@ -125,7 +125,7 @@ Fig 5. shows the CNN new model (85% average accuracy).
 </div>
 
 <p align="center">
-<a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/New-model.png" align="center" height="150"></a>
+<img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/New-model.png" align="center" height="150">
 </p>
 
 <div align="center"> 
@@ -141,7 +141,7 @@ Visualization with activation maximizationof the last layer shows that there is 
 </div>
 
 <p align="center">
-<a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/dense_layer.png" align="center" height="300"></a>
+<img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/dense_layer.png" align="center" height="300">
 </p>
 
 <div align="center"> 
@@ -157,7 +157,7 @@ We were also interested in investigating how the SVM model, proposed in [3] is c
 </div>
 
 <p align="center">
-<a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/SVM.png" align="center" height="300"></a>
+<img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/SVM.png" align="center" height="300">
 </p>
 <div align="center"> 
   
