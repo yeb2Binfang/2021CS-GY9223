@@ -24,8 +24,6 @@
 #### Please check [project report](https://github.com/vbabushkin/2021CS-GY9223/blob/main/REPORT/CS_GY_9223_PROJECT_REPORT.pdf) for more details
 
 
-###### (code repository)
-
 <!--## ABSTRACT-->
 </div>
 <div align="justify"> 
@@ -181,57 +179,57 @@ The main focus of this project is to interpret the emotion classification in CNN
 
 <div align="center"> 
  
-## REFERENCE
+## REFERENCES
 </div>
 
 <div align="justify"> 
 
-[1] J. Panksepp, “Affective neuroscience the foundations of human and animal emotions /,” New York, 2004.
+[1] J. Panksepp, “Affective neuroscience the foundations of human and animal emotions,” New York, 2004.
 
-[2] L. F. Barrett, B. Mesquita, K. N. Ochsner, and J. J. Gross,  “Theexperience  of  emotion,”Annu. Rev. Psychol.,  vol.  58,  pp.  373–403,2007.
+[2] L. F. Barrett, B. Mesquita, K. N. Ochsner, and J. J. Gross,  “The experience  of  emotion,” Annu. Rev. Psychol.,  vol.  58,  pp.  373–403,2007.
 
-[3]  V.  Babushkin,  W.  Park,  M.   Hassan  Jamil,  H.  Alsuradi,  and  M.  Eid,“EEG-based classification of the intensity of emotional responses,” in10th International IEEE EMBS Conference on Neural Engineering,2021.
+[3]  V.  Babushkin,  W.  Park,  M.   Hassan  Jamil,  H.  Alsuradi,  and  M.  Eid, “EEG-based classification of the intensity of emotional responses,” in 10th International IEEE EMBS Conference on Neural Engineering,2021.
 
-[4]  A. Bhardwaj, A. Gupta, P. Jain, A. Rani, and J. Yadav, “Classificationof  human  emotions  from  EEG  signals  using  SVM  and  LDA  classi-fiers,” in2015 2nd International Conference on Signal Processing andIntegrated Networks (SPIN), 2015, pp. 180–185.
+[4]  A. Bhardwaj, A. Gupta, P. Jain, A. Rani, and J. Yadav, “Classification of  human  emotions  from  EEG  signals  using  SVM  and  LDA  classifiers,” in 2015 2nd International Conference on Signal Processing andIntegrated Networks (SPIN), 2015, pp. 180–185.
 
-[5]  M.   M.   Bradley   and   P.   J.   Lang,   “Measuring   emotion:   the   self-assessment manikin and the semantic differential,”Journal of behaviortherapy and experimental psychiatry, vol. 25, no. 1, pp. 49–59, 1994.
+[5]  M.   M.   Bradley   and   P.   J.   Lang,   “Measuring   emotion:   the   self-assessment manikin and the semantic differential,”Journal of behavior therapy and experimental psychiatry, vol. 25, no. 1, pp. 49–59, 1994.
 
-[6]  N.  Dar,  M.  Akram,  S.  Khawaja,  and  A.  Pujari,  “CNN  and  LSTM-based emotion charting using physiological signals,”Sensors, vol. 20,p. 4551, 08 2020.
+[6]  N.  Dar,  M.  Akram,  S.  Khawaja,  and  A.  Pujari,  “CNN  and  LSTM-based emotion charting using physiological signals,” Sensors, vol. 20,p. 4551, 08 2020.
 
-[7]  Y.  Zhao,  X.  Cao,  J.  Lin,  D.  Yu,  and  X.  Cao,  “Multimodal  emotionrecognition model using physiological signals,” 2019.
+[7]  Y.  Zhao,  X.  Cao,  J.  Lin,  D.  Yu,  and  X.  Cao,  “Multimodal  emotion recognition model using physiological signals,” 2019.
 
-[8]  S. Siddharth, T.-P. Jung, and T. J. Sejnowski, “Utilizing deep learningtowards  multi-modal  bio-sensing  and  vision-based  affective  comput-ing,” 2019.
+[8]  S. Siddharth, T.-P. Jung, and T. J. Sejnowski, “Utilizing deep learning towards  multimodal  bio-sensing  and  vision-based  affective  computing,” 2019.
 
-[9]  A.  T.  Sohaib,  S.  Qureshi,  J.  Hagelbäck,  O.  Hilborn,  and  P.  Jerˇci ́c,“Evaluating classifiers for emotion recognition using EEG,” inFoun-dations of Augmented Cognition, D. D. Schmorrow and C. M. Fidopi-astis, Eds.    Berlin, Heidelberg: Springer Berlin Heidelberg, 2013, pp.492–501.
+[9]  A.  T.  Sohaib,  S.  Qureshi,  J.  Hagelbäck,  O.  Hilborn,  and  P Jerčić, “Evaluating classifiers for emotion recognition using EEG,” in Foundations of Augmented Cognition, D. D. Schmorrow and C. M. Fidopiastis, Eds. Berlin, Heidelberg: Springer Berlin Heidelberg, 2013, pp.492–501.
 
-[10]  P.  Rani,  C.  Liu,  N.  Sarkar,  and  E.  Vanman,  “An  empirical  study  ofmachine  learning  techniques  for  affect  recognition  in  human–robotinteraction,”Pattern Analysis and Applications, vol. 9, 05 2006.
+[10]  P.  Rani,  C.  Liu,  N.  Sarkar,  and  E.  Vanman,  “An  empirical  study  ofmachine  learning  techniques  for  affect  recognition  in  human–robot interaction, ”Pattern Analysis and Applications, vol. 9, 05 2006.
 
-[11]  Y.-P. Lin, C.-H. Wang, T.-L. Wu, S.-K. Jeng, and J. Chen, “EEG-basedemotion recognition in music listening: A comparison of schemes formulticlass support vector machine,” 04 2009, pp. 489–492.
+[11]  Y.-P. Lin, C.-H. Wang, T.-L. Wu, S.-K. Jeng, and J. Chen, “EEG-based emotion recognition in music listening: A comparison of schemes for multiclass support vector machine,” 04 2009, pp. 489–492.
 
-[12]  R. Horlings, D. Datcu, and L. Rothkrantz, “Emotion recognition usingbrain activity,” 01 2008, p. 6.
+[12]  R. Horlings, D. Datcu, and L. Rothkrantz, “Emotion recognition using brain activity,” 01 2008, p. 6.
 
-[13]  V. Anh, M. Van, B. Ha Bang, and T. Huynh Quyet, “A real-time modelbased support vector machine for emotion recognition through EEG,”11 2012, pp. 191–196.
+[13]  V. Anh, M. Van, B. Ha Bang, and T. Huynh Quyet, “A real-time model based support vector machine for emotion recognition through EEG,” 11 2012, pp. 191–196.
 
-[14]  P.  Petrantonakis  and  L.  Hadjileontiadis,  “Emotion  recognition  frombrain signals using hybrid adaptive filtering and higher order crossingsanalysis,”Affective Computing, IEEE Transactions on, vol. 1, pp. 81–97, 07 2010.
+[14]  P.  Petrantonakis  and  L.  Hadjileontiadis,  “Emotion  recognition  frombrain signals using hybrid adaptive filtering and higher order crossings analysis,” Affective Computing, IEEE Transactions on, vol. 1, pp. 81–97, 07 2010.
 
-[15]  Y.  Zhu,  S.  Wang,  and  Q.  Ji,  “Emotion  recognition  from  users’  EEGsignals with the help of stimulus videos,” vol. 2014, 07 2014, pp. 1–6.
+[15]  Y.  Zhu,  S.  Wang,  and  Q.  Ji,  “Emotion  recognition  from  users’  EEG signals with the help of stimulus videos,” vol. 2014, 07 2014, pp. 1–6.
 
-[16]  H. Mei and X. Xu, “EEG-based emotion classification using convolu-tional neural network,” in2017 International Conference on Security,Pattern Analysis, and Cybernetics (SPAC), 2017, pp. 130–135.
+[16]  H. Mei and X. Xu, “EEG-based emotion classification using convolutional neural network,” in 2017 International Conference on Security, Pattern Analysis, and Cybernetics (SPAC), 2017, pp. 130–135.
 
 [17]  R.  Alhalaseh  and  S.  Alasasfeh,  “Machine-learning-based  emotionrecognition system using EEG signals,”Computers, vol. 9, no. 4, 2020.
 
-[18]  Y.-H. Kwon, S.-B. Shin, and S. Kim, “Electroencephalography basedfusion   two-dimensional   (2D)-convolution   neural   networks   (CNN)model for emotion recognition system,”Sensors (Basel, Switzerland),vol. 18, 2018.
+[18]  Y.-H. Kwon, S.-B. Shin, and S. Kim, “Electroencephalography based fusion two-dimensional   (2D)-convolution   neural   networks   (CNN) model for emotion recognition system,” Sensors (Basel, Switzerland), vol. 18, 2018.
 
-[19]  S. Koelstra, C. Muhl, M. Soleymani, J. Lee, A. Yazdani, T. Ebrahimi,T.  Pun,  A.  Nijholt,  and  I.  Patras,  “Deap:  A  database  for  emotionanalysis ;using physiological signals,”IEEE Transactions on AffectiveComputing, vol. 3, no. 1, pp. 18–31, 2012.
+[19]  S. Koelstra, C. Muhl, M. Soleymani, J. Lee, A. Yazdani, T. Ebrahimi, T.  Pun,  A.  Nijholt,  and  I.  Patras,  “Deap:  A  database  for  emotionanalysis ;using physiological signals,” IEEE Transactions on Affective Computing, vol. 3, no. 1, pp. 18–31, 2012.
 
-[20]  J.  Liu,  G.  Wu,  Y.  Luo,  S.  Qiu,  S.  Yang,  W.  Li,  and  Y.  Bi,  “EEG-based  emotion  classification  using  a  deep  neural  network  and  sparseautoencoder,”Frontiers in Systems Neuroscience, vol. 14, p. 43, 2020.
+[20]  J.  Liu,  G.  Wu,  Y.  Luo,  S.  Qiu,  S.  Yang,  W.  Li,  and  Y.  Bi,  “EEG-based  emotion  classification  using  a  deep  neural  network  and  sparse autoencoder,” Frontiers in Systems Neuroscience, vol. 14, p. 43, 2020.
 
-[21]  N. Liu, Y. Fang, L. Li, L. Hou, F. Yang, and Y. Guo, “Multiple featurefusion for automatic emotion recognition using EEG signals,” 04 2018,pp. 896–900.
+[21]  N. Liu, Y. Fang, L. Li, L. Hou, F. Yang, and Y. Guo, “Multiple feature fusion for automatic emotion recognition using EEG signals,” 04 2018,pp. 896–900.
 
-[22]  L.  van  der  Maaten  and  G.  Hinton,  “Viualizing  data  using  t-SNE,”Journal of Machine Learning Research,  vol.  9,  pp.  2579–2605,  112008.
+[22]  L.  van  der  Maaten  and  G.  Hinton,  “Viualizing  data  using  t-SNE,” Journal of Machine Learning Research,  vol.  9,  pp.  2579–2605,  112008.
 
-[23]  A. Bilal, A. Jourabloo, M. Ye, X. Liu, and L. Ren, “Do convolutionalneural networks learn class hierarchy?”IEEE Transactions on Visual-ization and Computer Graphics, vol. 24, no. 1, pp. 152–162, 2018.
+[23]  A. Bilal, A. Jourabloo, M. Ye, X. Liu, and L. Ren, “Do convolutional neural networks learn class hierarchy?” IEEE Transactions on Visual-ization and Computer Graphics, vol. 24, no. 1, pp. 152–162, 2018.
 
-[24]  Z.  Gao,  X.  Cui,  W.  Wan,  and  Z.  Gu,  “Recognition  of  emotionalstates  using  multiscale  information  analysis  of  high  frequency  eegoscillations,”Entropy,   vol.   21,   no.   6,   2019.   [Online].   Available:https://www.mdpi.com/1099-4300/21/6/609
+[24]  Z.  Gao,  X.  Cui,  W.  Wan,  and  Z.  Gu,  “Recognition  of  emotional states  using  multiscale  information  analysis  of  high  frequency  EEG oscillations,” Entropy,   vol.   21,   no.   6,   2019.   [Online].   Available:https://www.mdpi.com/1099-4300/21/6/609
 
 </div>
