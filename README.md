@@ -178,7 +178,26 @@ The main focus of this project is to interpret the emotion classification in CNN
 </div>
 
 <div align="center"> 
- 
+## LIBRARIES USED
+</div>
+
+<div align="justify"> 
+F. Chollet, "Keras," 2015, https://keras.io
+
+R. Kotikalapudi et al., "keras-vis", 2017, https://github.com/raghakot/keras-vis
+
+Martín Abadi, Paul Barham, Jianmin Chen, Zhifeng Chen, Andy Davis, Jeffrey Dean,
+Matthieu Devin, Sanjay Ghemawat, Geoffrey Irving, Michael Isard, Manjunath Kudlur,
+Josh Levenberg, Rajat Monga, Sherry Moore, Derek G. Murray, Benoit Steiner, Paul Tucker,
+Vijay Vasudevan, Pete Warden, Martin Wicke, Yuan Yu, and Xiaoqiang Zheng, Google Brain, "Tensorflow: A system for large-scale machine learning", 2016, 
+In 12th USENIX Symposium on Operating Systems Design and Implementation (OSDI 16) (pp. 265–283)
+
+F. Pedregosa, V. Gael, G. Alexandre, M. Vincent, T. Bertrand, G. Olivier, M. Blondel, P. Prettenhofer, W. Ron, D. Vincent, V. Jake, P. Alexandre, C. David and B. Matthieu, "Scikit-learn: Machine learning in Python.," Journal of Machine Learning Research, p. 2825–2830, 2011. 
+
+
+</div>
+
+<div align="center"> 
 ## REFERENCES
 </div>
 
@@ -230,6 +249,6 @@ The main focus of this project is to interpret the emotion classification in CNN
 
 [23]  A. Bilal, A. Jourabloo, M. Ye, X. Liu, and L. Ren, “Do convolutional neural networks learn class hierarchy?” IEEE Transactions on Visual-ization and Computer Graphics, vol. 24, no. 1, pp. 152–162, 2018.
 
-[24]  Z.  Gao,  X.  Cui,  W.  Wan,  and  Z.  Gu,  “Recognition  of  emotional states  using  multiscale  information  analysis  of  high  frequency  EEG oscillations,” Entropy,   vol.   21,   no.   6,   2019.   [Online].   Available:https://www.mdpi.com/1099-4300/21/6/609
+[24]  Z.  Gao,  X.  Cui,  W.  Wan,  and  Z.  Gu,  “Recognition  of  emotional states  using  multiscale  information  analysis  of  high  frequency  EEG oscillations,” Entropy,   vol.   21,   no.   6,   2019.   [Online].   Available: https://www.mdpi.com/1099-4300/21/6/609
 
 </div>
