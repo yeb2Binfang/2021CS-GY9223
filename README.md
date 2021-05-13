@@ -37,3 +37,27 @@ Emotions play an essential role in our everyday lives since they affect our soci
  
 The concepts of valence and arousal act as dimensions in models for human emotions categorization. The commonly used circumplex model is demonstrated on Figure 1, where emotions  are projected to the valence-arousal coordinates. The valence estimates the extent of the pleasantness of perceiving the stimulus and the arousal represents the degree of   awareness induced by the stimulus. In most of the affective computing studies the valence and arousal are as-signed high/low levels, thus distinguishing between positive valence  high arousal (PVHA), positive valence low arousal(PVLA), negative valence low arousal (NVLA) and negative valence high arousal (NVHA) [6] [7] [8]. In this project we follow the terminology in [3] where authors differentiate between Positive/Negative Valence (in most studies knownas High/Low Valence) and High/Low Arousal.
 </div>
+<p align="center">
+<a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/Figures/Emotion_class.png" align="center" height="300"></a>
+</p>
+<div align="center"> 
+  
+Fig.1: 4 Emotion classes: Positive Valence High Arousal (PVHA), Negative Valence High Arousal (NVHA), Negative Valence Low Arousal (NVLA), Positive Valence Low Arousal (PVLA).
+
+</div>
+
+<div align="justify"> 
+In this project, we use the EEG data for human emotion recognition according to the classical circumplex model(see Fig. 1). The main focus of the project is in on the interpretability of the models for human emotion recognition. We visualize the hidden layers of the Convolutional NeuralNetworks model offered in [3] to study which features  are responsible for the particular emotion category. It allows to make a conclusion about frequency ranges that the modeluses to differentiate between four emotion categories.  We propose a modified architecture of CNN model that improves the recognition accuracy. A thorough analysis of original datadetermined presence of outliers in spectral power  density at the beginning of each trial, that affects the classification accuracy. These outliers were not reported in [3] and their removal increases the accuracy of the model.  Finally, we propose a pipeline for analysis of the EEG data for emotion classification.
+</div>
+
+<div align="center"> 
+ 
+## RELATED-WORK
+</div>
+
+<div align="justify"> 
+  
+The multiple studies demonstrate that it is possible to achieve high accuracy for human emotions classification using Machine Learning. The popular Machine Learning  approaches for human emotion recognition from EEG data include K-Nearest Neighbor (KNN), Bayesian Network (BN), Artificial Neural Network (ANN), and Support Vector Machine (SVM). For instance, the SVM model adapted for a multi-class classification was used for recognition of four music-induced emotional responses from EEG recordings with  anaccuracy of 90.52%  using the one-against-one scheme and the accuracy of 82.37% with all-together scheme [11]. Other studies focusing on classifying the valence and arousal with SVM reported accuracies of 32% and 37% [12]. Usually the high accuracies are achieved while recognizing emotions with the SVM classifier from the offline data. However, for real-time emotion recognition, the classification accuracy is usually low. For example, in [13] the SVM classifier was used for online emotion recognition and achieved average accuracy of 70.5%. Therefore, when we classify the emotional EEG data, several factors should be considered since it will affect the accuracy of emotions recognition such as different experiment environments, preprocessing techniques, feature selection, and length of the dataset [9] [10].
+
+The multivariate character of the EEG data pose several challenges for emotion classification including noise and low generalization due to high dimensionality. Some studies use the Independent Component Analysis (ICA) for decomposing the data into independent components [4], or Empirical Mode Decomposition and then Genetic Algorithms to extract important statistical features [14]. Focusing on specific frequency bands and features allows to significantly increase the accuracy of classifier, e.g. applying SVM to five  frequency features extracted from each channel of the EEG records lead to average accuracy of 55.72% for and 60.23% for classifying valence and arousal [15]. Also,  incorporation of different modalities into the model such as audio/visual features, extracted from video stimulus increases the accuracy to 58.16% for valence and 61.35% for arousal [15].
+</div> 
