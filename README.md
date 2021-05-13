@@ -69,6 +69,23 @@ Fig.1: 4 Emotion classes: Positive Valence High Arousal (PVHA), Negative Valence
 ## VISUAL DATA ANALYSIS
 </div>
 
+### Spectral data visualization
+<div align="justify"> 
+The spectral power increases with the frequency and demonstrates similar behavior for all fouremotion categories. The peak at 50Hz reflects the effect of applying the notch  filter. Interestingly, that the magnitude of the spectral power density for NVLA prevails for lower frequencies, particularly in Beta band (13-31 Hz), while the magnitudes for  NVHA and PVHA become more prevalentin Low Gamma (31Hz – 50Hz) and High Gamma (51Hz – 79Hz) bands.
+</div>
+
+<p align="center">
+<a href="https://raw.githubusercontent.com/vbabushkin/2021CS-GY9223/main/Figures/Power%20spectral%20density%20averaged.png" align="center" height="300"></a>
+</p>
+
+<div align="center"> 
+  
+Fig2. Power spectral density averaged over 160 timepointsand 59 sensors.
+
+</div>
+
+### Dimension Reduction
+
 <div align="justify"> 
   
 </div>
