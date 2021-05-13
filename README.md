@@ -49,7 +49,7 @@ Analyzing the biological signals our brain generates in response to external vis
 
 
 <p align="center">
-<a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/Emotion_class.png" align="center" height="300"></a>
+<img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/Emotion_class.png" align="center" height="300">
 </p>
 <div align="center"> 
   
@@ -78,7 +78,7 @@ The averaged plots of time course of spectral densities for each of the bands ar
 </div>
 
 <p align="center">
-<a href="http://usm.md/?lang=en"><img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/The%20%20spectral%20%20densities.png" align="center" height="200"></a>
+<img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/The%20%20spectral%20%20densities.png" align="center" height="200">
 </p>
 <div align="center"> 
   
