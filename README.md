@@ -49,7 +49,7 @@ Analyzing the biological signals our brain generates in response to external vis
 
 
 <p align="center">
-<img src="https://github.com/vbabushkin/2021CS-GY9223/blob/main/FIGURES/Emotion_class.png" align="center" height="300">
+![Kiku](FIGURES/Emotion_class.png, align="center" height="300") 
 </p>
 <div align="center"> 
   
